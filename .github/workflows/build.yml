@@ -14,5 +14,5 @@ jobs:
         run: make
 
       - name: Nettoyage
-        run: make clean
+        run: make fclean
       
