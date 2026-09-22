@@ -7,7 +7,7 @@
 
 NAME    = my_calculator
 
-CC      = epiclang
+CC      = gcc
 
 CFLAGS  = -Wall -Wextra -Iinclude
 
