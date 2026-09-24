@@ -40,19 +40,20 @@ int is_perfect(general_t *general)
 
 int is_fibonacci(general_t *general)
 {
-    int next = 0;
+    int previous = 0;
+    int current = 1;
 
-    if (I == 0)
+    if (I < 0)
+        return 0;
+    if (I == 0 || I == 1)
         return 1;
-    while (I > CURRENT) {
-        next = CURRENT + PREVIOUS;
-        PREVIOUS = CURRENT;
-        CURRENT = next;
+    while (current < I) {
+        int next = current + previous;
+
+        previous = current;
+        current = next;
     }
-    if (I == CURRENT) {
-        return 1;
-    }
-    return 0;
+    return current == I;
 }
 
 int is_a_fck_sqrt(general_t *general)

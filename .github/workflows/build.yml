@@ -13,6 +13,9 @@ jobs:
       - name: Compilation du projet
         run: make
 
+      - name: Tests complets
+        run: make full_test
+
       - name: Nettoyage
         run: make fclean
       

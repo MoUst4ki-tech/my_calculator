@@ -83,5 +83,4 @@ void print_help(void)
     printf("    -s step        Le pas entre chaque nombre.\n");
     printf("    -d duration    La durée en ms (par défaut : 500ms).\n");
     printf("    -p print       0 ou 1 pour activer/désactiver l'affichage (par défaut : 0).\n");
-    printf("    coucou moi.\n" );
 }
